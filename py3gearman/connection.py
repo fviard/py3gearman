@@ -188,7 +188,7 @@ class GearmanConnection(object):
             cmd_type, cmd_args = self._outgoing_commands.popleft()
             packed_command = self._pack_command(cmd_type, cmd_args)
             if isinstance(packed_command, str):
-                packed_command = packed_command.encode('ascii')
+                packed_command = packed_command.encode()
             packed_data += packed_command
 
         self._outgoing_buffer = bytes(packed_data)
