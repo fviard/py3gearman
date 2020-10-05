@@ -1,3 +1,14 @@
+py3gearman-compat 3.x:
+========================================
+
+
+py3gearman 3.x:
+========================================
+Primary authors:
+* Mayank Jaiswal <root@demo.gludo.com>
+* Shuto Shimabukuro <shuto4192@gmail.com>
+
+
 python-gearman 2.x:
 ========================================
 Primary authors:
