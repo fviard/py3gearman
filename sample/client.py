@@ -1,4 +1,4 @@
-import py3gearman
+import gearman
 
 
 def check_request_status(job_request):
@@ -9,7 +9,7 @@ def check_request_status(job_request):
     elif job_request.state == "JOB_UNKNOWN":
         print("Job %s connection failed!" % job_request.unique)
 
-gm_client = py3gearman.GearmanClient(['localhost:4730'])
+gm_client = gearman.GearmanClient(['localhost:4730'])
 
 completed_job_request = gm_client.submit_job("reverse", "Hello World!")
 check_request_status(completed_job_request)

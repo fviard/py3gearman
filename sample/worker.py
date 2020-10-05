@@ -1,6 +1,6 @@
-import py3gearman
+import gearman
 
-gm_worker = py3gearman.GearmanWorker(['localhost:4730'])
+gm_worker = gearman.GearmanWorker(['localhost:4730'])
 
 
 def task_listener_reverse(gearman_worker, gearman_job):
