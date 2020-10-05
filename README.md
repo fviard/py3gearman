@@ -1,11 +1,12 @@
-# py3gearman
-gearman client for python 3
-
-[![PyPI](https://img.shields.io/pypi/v/py3gearman.svg)](https://pypi.python.org/pypi/py3gearman)
+# py3gearman-compat
+Python gearman client
+Drop in python 3 replacement for the python 2 gearman package
 
 ## Install
+Not available on PIP
+
 ```bash
-pip install py3gearman
+python3 setup.py install
 ```
 
 ## Usage
